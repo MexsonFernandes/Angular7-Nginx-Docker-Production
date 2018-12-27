@@ -13,6 +13,7 @@
   
 ## Docker setup uing docker-compose.yml
   * run "<b>docker-compose up --build</b>" to build docker image and start the server.
+  * run "<b>docker build -t angular-docker .</b>" if the above command gives error.
   * run "<b>docker-compose up</b>" to start existing docker image.
   * run "<b>docker-compose down</b>" to stop docker process.
   * Optional "<b>docker-compose down --rmi all</b>" to remove everything.
