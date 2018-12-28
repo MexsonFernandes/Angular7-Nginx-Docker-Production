@@ -1,4 +1,4 @@
-# `Angular 7 Nginx Docker for Production`
+# `Angular 7 Nginx Docker for Production (SSL also included)`
 
 ## Initial setup
   * Compile your Angular project for production use
@@ -21,5 +21,6 @@
 #### NOTE:
   * You can use either of the method specified above. The simplest one is by using docker-compose.yml file.
   * To start the server on port 80, make sure that there is no service currently open, which is using port 80. In the case of nginx running already on port 80, use "<b>sudo service nginx stop</b>" command. Then use "<b>docker run -p 80:80 --rm angular-docker</b>"
+  * For ssl comment out lines from nginx.conf file and alos include the required ssl files like .crt(ssl certificate) and .key(private key). 
   
     
